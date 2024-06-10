@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="Styles/syle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <title>Miranda Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><title>Miranda Web</title>
     <script defer src="scripts/navHamburguer.js"></script>
 </head>
 <body>
@@ -38,5 +37,14 @@
             <button class="button__filled">TAKE A TOUR</button>
             <button class="button__hollow">LEARN MORE</button>
     </header>
+    <section class="availability-section">
+        <form>
+            <label for="arrivalDate">Arrival Date</label>
+            <input type="date" id="arrivalDate" name="arrivalDate" >
+            <label for="departureDate">LeDeparture Date</label>
+            <input type="date" id="departureDate" name="departureDate" >
+            <input type="submit" value="CHECK AVAILABILITY" class="button__filled">
+          </form> 
+    </section>
 </body>
 </html>
