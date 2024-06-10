@@ -1,0 +1,92 @@
+.about-us{
+    padding: 20px;
+    margin-top: 60px;
+
+    &__overtitle{
+        margin-top: 38px;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 2.799999952316284px;
+    }
+
+    h2{
+        margin-top: 32px;
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: -1.2000000476837158px;
+    }
+
+    p{
+        margin-top: 16px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    button{
+        margin-top: 24px;
+        width: 216px;
+        height: 60px;
+        margin-bottom: 80px;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 2px 8px 16px #22222205;
+        margin: 30px auto 45px auto;
+        width: 70%;
+
+        img{
+            width: 270px;
+            height: 300px;
+            background-color: #E4E4E4;
+            border: none;
+        }
+
+        div{
+            width: 270px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 35px;
+            position: relative;
+
+            img{
+                margin-top: 20px;
+                height: 50px;
+                width: auto;
+                background-color: transparent;
+            }
+
+            .article-bg-img{
+                height: 106px;
+                width: auto;
+                position: absolute;
+                z-index: -1;
+                top: 50px;
+                right: 0px;
+                margin-top: 0;
+            }
+
+            h3{
+                margin-top: 30px;
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: -0.8999999761581421px;
+            }
+
+            p{
+                margin-top: 21px;
+                font-size: 14px;
+                font-weight: 400;
+                text-align: center;
+                line-height: 22px;
+            }
+        }
+    }
+}

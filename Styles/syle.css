@@ -119,6 +119,11 @@ header button {
   cursor: pointer;
 }
 
+.dark-theme {
+  background-color: black;
+  color: white;
+}
+
 .availability-section {
   background-color: #222222;
   padding: 36px 20px;
@@ -158,6 +163,88 @@ header button {
 }
 .availability-section form input[type=submit]:hover {
   cursor: pointer;
+}
+
+.about-us {
+  padding: 20px;
+  margin-top: 60px;
+}
+.about-us__overtitle {
+  margin-top: 38px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.7999999523px;
+}
+.about-us h2 {
+  margin-top: 32px;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+}
+.about-us p {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.about-us button {
+  margin-top: 24px;
+  width: 216px;
+  height: 60px;
+  margin-bottom: 80px;
+}
+.about-us article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 8px 16px rgba(34, 34, 34, 0.0196078431);
+  margin: 30px auto 45px auto;
+  width: 70%;
+}
+.about-us article img {
+  width: 270px;
+  height: 300px;
+  background-color: #E4E4E4;
+  border: none;
+}
+.about-us article div {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px;
+  position: relative;
+}
+.about-us article div img {
+  margin-top: 20px;
+  height: 50px;
+  width: auto;
+  background-color: transparent;
+}
+.about-us article div .article-bg-img {
+  height: 106px;
+  width: auto;
+  position: absolute;
+  z-index: -1;
+  top: 50px;
+  right: 0px;
+  margin-top: 0;
+}
+.about-us article div h3 {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.8999999762px;
+}
+.about-us article div p {
+  margin-top: 21px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 22px;
 }
 
 html, * {
