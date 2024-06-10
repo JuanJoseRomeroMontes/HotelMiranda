@@ -1,0 +1,28 @@
+
+@mixin button() {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15.23px;
+    letter-spacing: 2.799999952316284px;
+    border: none;
+}
+
+.button__filled{
+    @include button();
+    background-color: #BEAD8E;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.button__hollow{
+    @include button();
+    background-color: transparent;
+    border: 2px solid #FFFFFF54;
+
+    &:hover{
+        cursor: pointer;
+    }
+}

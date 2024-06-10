@@ -55,6 +55,58 @@ nav .menu ul li a {
   display: block !important;
 }
 
+header {
+  padding: 75px 20px 51px 20px;
+  background-color: #333333;
+}
+header p {
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.7999999523px;
+  width: 80%;
+  margin-bottom: 40px;
+}
+header h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 56px;
+  margin-bottom: 40px;
+}
+header button {
+  width: 216px;
+  height: 60px;
+  margin-bottom: 24px;
+}
+
+.button__filled {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  border: none;
+  background-color: #BEAD8E;
+}
+.button__filled:hover {
+  cursor: pointer;
+}
+
+.button__hollow {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  border: none;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3294117647);
+}
+.button__hollow:hover {
+  cursor: pointer;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
@@ -64,4 +116,8 @@ html, * {
 
 body {
   min-width: 320px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: "Old Standard TT";
 }/*# sourceMappingURL=syle.css.map */
