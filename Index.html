@@ -7,7 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><title>Miranda Web</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="scripts/navHamburguer.js"></script>
+    <script defer src="scripts/Swiper.js"></script>
 </head>
 <body>
     <nav>
@@ -69,6 +75,29 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
             </div>
         </article>
+    </section>
+    <section class="rooms">
+        <p class="rooms__overtitle">ROOMS</p>
+        <h2>Hand Picked Rooms</h2>
+        <img src="Images/RoomFeaturesBar.svg" class="rooms__features"/>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img alt="room1" src="https://www.shutterstock.com/image-illustration/horizontal-frame-mockup-boho-bedroom-600nw-1901460664.jpg"></div>
+                <div class="swiper-slide"><img alt="room2" src="https://media.remodelista.com/wp-content/uploads/2015/03/fields/tiina-laakonen-hamptons-NY-remodelista-24.jpeg"></div>
+                <div class="swiper-slide"><img alt="room3" src="https://img.freepik.com/premium-photo/living-room-with-luxurious-elegantly-designed-neutral-interior-horizontal-layout_410516-84179.jpg"></div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="rooms__info">
+            <h3>Minimal Duplex Room</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <p class="price__number">$345<span class="price__text">/Night</span></p>
+        </div>
     </section>
 </body>
 </html>

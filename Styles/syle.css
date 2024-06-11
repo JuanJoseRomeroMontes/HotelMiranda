@@ -124,6 +124,56 @@ header button {
   color: white;
 }
 
+.price__number {
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  line-height: 43px !important;
+  text-align: center;
+  color: #BEAD8E;
+}
+.price__text {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  line-height: 43px !important;
+  text-align: center;
+  color: #BEAD8E;
+}
+
+.swiper {
+  width: calc(100% + 40px);
+  position: relative;
+  left: -20px;
+  height: 250px;
+  background-color: #E5E5E5;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-prev {
+  width: 36px !important;
+  height: 36px !important;
+  background-color: white;
+  color: transparent !important;
+  background-image: url(../Images/SwiperLeftArrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px !important;
+}
+
+.swiper-button-next {
+  width: 36px !important;
+  height: 36px !important;
+  background-color: #BDAC8D;
+  color: transparent !important;
+  background-image: url(../Images/SwiperRightArrow.svg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px !important;
+}
+
 .availability-section {
   background-color: #222222;
   padding: 36px 20px;
@@ -245,6 +295,58 @@ header button {
   font-weight: 400;
   text-align: center;
   line-height: 22px;
+}
+
+.rooms {
+  padding: 20px;
+  margin-top: 60px;
+}
+.rooms__overtitle {
+  margin-top: 38px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.8px;
+  text-align: center;
+  margin: auto;
+}
+.rooms h2 {
+  margin-top: 24px;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  text-align: center;
+}
+.rooms__features {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  position: relative;
+  top: 43px;
+  z-index: 2;
+}
+.rooms__info {
+  background-color: white;
+  position: relative;
+  top: -25px;
+  z-index: 1;
+}
+.rooms__info h3 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1.2px;
+  text-align: center;
+}
+.rooms__info p {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  max-width: 287px;
 }
 
 html, * {
