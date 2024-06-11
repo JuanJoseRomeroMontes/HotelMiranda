@@ -31,13 +31,14 @@
         z-index: 2;
     }
 
-    &__info{
+    article{
         background-color: white;
         position: relative;
         top: -25px;
         z-index: 1;
 
         h3{
+            padding-top: 20px;
             font-size: 28px;
             font-weight: 400;
             line-height: 36px;
@@ -46,7 +47,7 @@
         }
     
         p{
-            margin-top: 16px;
+            margin: 16px auto 0px auto;
             font-size: 14px;
             font-weight: 400;
             line-height: 24px;

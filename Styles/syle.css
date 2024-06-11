@@ -327,21 +327,22 @@ header button {
   top: 43px;
   z-index: 2;
 }
-.rooms__info {
+.rooms article {
   background-color: white;
   position: relative;
   top: -25px;
   z-index: 1;
 }
-.rooms__info h3 {
+.rooms article h3 {
+  padding-top: 20px;
   font-size: 28px;
   font-weight: 400;
   line-height: 36px;
   letter-spacing: -1.2px;
   text-align: center;
 }
-.rooms__info p {
-  margin-top: 16px;
+.rooms article p {
+  margin: 16px auto 0px auto;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
