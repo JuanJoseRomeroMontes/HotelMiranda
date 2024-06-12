@@ -84,7 +84,7 @@
         <p class="rooms__overtitle">ROOMS</p>
         <h2>Hand Picked Rooms</h2>
         <img src="Images/RoomFeaturesBar.svg" class="rooms__features"/>
-        <div class="swiper photo-swiper">
+        <div class="swiper photo-swiper" id="swiper-rooms">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -94,8 +94,8 @@
             </div>
 
             <!-- Navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev" id="swiper-button-prev-rooms"></div>
+            <div class="swiper-button-next" id="swiper-button-next-rooms"></div>
         </div>
         <article>
             <h3>Minimal Duplex Room</h3>
@@ -118,7 +118,7 @@
     <section class="facilities">
         <p>FACILITIES</p>
         <h2>Core Features</h2>
-        <div class="swiper facility-swiper">
+        <div class="swiper facility-swiper" id="swiper-features">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -172,7 +172,7 @@
                 </div>
             </div>
 
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination" id="swiper-pagination-features"></div>
         </div>
     </section>
 
@@ -180,10 +180,10 @@
         <!-- <img src="Images/FoodsIcon.svg"> -->
         <p>MENU</p>
         <h2>Our Foods Menu</h2>
-        <div class="swiper">
+        <div class="swiper" id="swiper-food">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="swiper-slide__menu">
+                    <div class="menu__swiper-slide">
                         <div>
                             <img alt="Eggs & Bacon image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIHtcg_eeKEct6bsV6ajs_HnwzWwgBI0KZUOdbCLTRR3l3Osh5xQhYxo3iYh7n32cPGB-1QyM_8SBYRs5T3d2S2LLMJ1Zq_-9LtAdyUMuOe-d08d4gVR4P-4TCK9PCcEsST-H7k6J7DqO1/s640/Bacon-and-Eggs_IMG_0822.JPG">
                             <div>
@@ -208,7 +208,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="swiper-slide__menu">
+                    <div class="menu__swiper-slide">
                         <div>
                             <img alt="Fruit Parfait image" src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2022-01_Yogurt-Parfait%2F2022-01-05_ATK-0852">
                             <div>
@@ -233,15 +233,15 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Navigation buttons -->
-            <div class="swiper-button-prev swiper-button-prev__menu"></div>
-            <div class="swiper-button-next swiper-button-next__menu"></div>
+        </div>
+        <div class="menu__button-container">
+            <div class="menu__button-container__prev" id="swiper-button-prev-food"></div>
+            <div class="menu__button-container__next" id="swiper-button-next-food"></div>
         </div>
     </section>
     
     <section class="stats">
-        <div class="swiper stats__swiper">
+        <div class="swiper stats__swiper" id="swiper-carousel">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -250,7 +250,7 @@
                 <div class="swiper-slide"><img class="swiper-slide__stats-img" alt="room3" src="https://img.freepik.com/premium-photo/living-room-with-luxurious-elegantly-designed-neutral-interior-horizontal-layout_410516-84179.jpg"></div>
             </div>
 
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination" id="swiper-pagination-carousel"></div>
         </div>
 
         <article class="stats__show dark-theme">

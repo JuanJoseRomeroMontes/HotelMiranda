@@ -19,6 +19,7 @@
 .button__hollow{
     @include button();
     background-color: transparent;
+    color: black;
     border: 2px solid #FFFFFF54;
 
     &:hover{
@@ -66,20 +67,19 @@
 }
 
 .swiper-button-prev{
-    width: 36px !important;
-    height: 36px !important;
+    width: 32px !important;
+    height: 32px !important;
     background-color: white;
     color: transparent !important;
     background-image: url(../Images/SwiperLeftArrow.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 10px !important;
-    
 }
 
 .swiper-button-next{
-    width: 36px !important;
-    height: 36px !important;
+    width: 32px !important;
+    height: 32px !important;
     background-color: #BDAC8D;
     color: transparent !important;
     background-image: url(../Images/SwiperRightArrow.svg.svg);

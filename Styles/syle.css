@@ -113,6 +113,7 @@ header button {
   letter-spacing: 2.7999999523px;
   border: none;
   background-color: transparent;
+  color: black;
   border: 2px solid rgba(255, 255, 255, 0.3294117647);
 }
 .button__hollow:hover {
@@ -156,8 +157,8 @@ header button {
 }
 
 .swiper-button-prev {
-  width: 36px !important;
-  height: 36px !important;
+  width: 32px !important;
+  height: 32px !important;
   background-color: white;
   color: transparent !important;
   background-image: url(../Images/SwiperLeftArrow.svg);
@@ -167,8 +168,8 @@ header button {
 }
 
 .swiper-button-next {
-  width: 36px !important;
-  height: 36px !important;
+  width: 32px !important;
+  height: 32px !important;
   background-color: #BDAC8D;
   color: transparent !important;
   background-image: url(../Images/SwiperRightArrow.svg.svg);
@@ -478,12 +479,31 @@ header button {
   margin: 24px 0px 32px 0px;
   color: #222222;
 }
-
-.swiper-slide__menu div {
+.menu__button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu__button-container div {
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  margin-left: 16px;
+}
+.menu__button-container__prev {
+  background-image: url(../Images/SwiperLeftArrow.svg);
+  background-color: #F8F8F8;
+}
+.menu__button-container__next {
+  background-image: url(../Images/SwiperRightArrow.svg.svg);
+  background-color: #BDAC8D;
+}
+.menu__swiper-slide div {
   display: flex;
   margin-bottom: 20px;
 }
-.swiper-slide__menu div img {
+.menu__swiper-slide div img {
   min-width: 120px;
   min-height: 120px;
   max-width: 120px;
@@ -495,39 +515,27 @@ header button {
   right: 0px;
   margin-right: 30px;
 }
-.swiper-slide__menu div div {
+.menu__swiper-slide div div {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0;
 }
-.swiper-slide__menu div div h4 {
+.menu__swiper-slide div div h4 {
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.72px;
   margin: 0;
 }
-.swiper-slide__menu div div p {
+.menu__swiper-slide div div p {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0px;
   color: #222222;
   margin: 0;
-}
-
-.swiper-button-prev__menu {
-  position: absolute !important;
-  right: 0px !important;
-  bottom: -20px !important;
-}
-
-.swiper-button-next__menu {
-  position: absolute !important;
-  right: 30px !important;
-  bottom: -20px !important;
 }
 
 .stats {
