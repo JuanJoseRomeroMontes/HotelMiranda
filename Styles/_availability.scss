@@ -1,0 +1,47 @@
+.availability-section{
+    background-color: #222222;
+    padding: 36px 20px;
+
+    form{
+        display: flex;
+        flex-direction: column;
+
+        label{
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18.75px;
+            color: white;
+            margin-bottom: 9px;
+        }
+
+        input[type="date"]{
+            background: url(../Images/CalendarIconGold.svg) no-repeat scroll -1px;
+            background-size: 16px;
+            padding: 14px 0 14px 22px;
+            border: none;
+            border-bottom: 2px solid #BEAD8E;
+            color: #686868;
+            font-size: 14px;
+            margin-bottom: 50px;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        input[type="date"]::-webkit-inner-spin-button,
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            visibility: hidden;
+        }
+
+        input[type="submit"]{
+            width: 250px;
+            height: 60px;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

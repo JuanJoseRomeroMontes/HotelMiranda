@@ -1,0 +1,23 @@
+@use '_nav.scss';
+@use '_header.scss';
+@use '_miscellaneous.scss';
+@use '_availability.scss';
+@use '_aboutUs.scss';
+@use '_rooms.scss';
+@use '_intro-video.scss';
+@use '_facilities.scss';
+@use '_menu.scss';
+@use '_stats.scss';
+@use '_footer.scss';
+
+html, * { box-sizing: border-box; margin: 0; padding: 0; font-family: Archivo,"Old Standard TT", Arial, Georgia ; }
+body { min-width: 320px }
+
+h1,h2,h3,h4,h5,h6 { font-family: "Old Standard TT";}
+
+h2{
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -1.2px;
+}

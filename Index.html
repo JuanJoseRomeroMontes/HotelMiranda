@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="Styles/syle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><title>Miranda Web</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="scripts/navHamburguer.js"></script>
+    <script defer src="scripts/Swiper.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <img class="nav-bar__hamburger" id="navHamburgerButton" src="Images/Hamburguer.svg" alt="Menu"/>
+            <div class="nav-bar__logo">
+                <div> <p>H</p> </div>
+                <img src="Images/HotelMiranda.svg" alt="HOTEL MIRANDA"/>
+            </div>
+            <div class="nav-bar__icons">
+                <img src="Images/ProfileIcon.svg" alt="Profile"/>
+                <img src="Images/SearchIcon.svg" alt="Search"/>
+            </div>
+        </div>
+        <div class="menu" id="navHamburguerMenu">
+            <ul>
+                <li><a>About us</a></li>
+                <li><a>Rooms</a></li>
+                <li><a>Offers</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+            <p>THE ULTIMATE LUXURY EXPERIENCE</p>
+            <h1>The Perfect Base For You</h1>
+            <button class="button__filled">TAKE A TOUR</button>
+            <button class="button__hollow">LEARN MORE</button>
+    </header>
+
+    <section class="availability-section">
+        <form>
+            <label for="arrivalDate">Arrival Date</label>
+            <input type="date" id="arrivalDate" name="arrivalDate" >
+            <label for="departureDate">LeDeparture Date</label>
+            <input type="date" id="departureDate" name="departureDate" >
+            <input type="submit" value="CHECK AVAILABILITY" class="button__filled">
+          </form> 
+    </section>
+
+    <section class="about-us">
+        <p class="about-us__overtitle">ABOUT US</p>
+        <h2>Discover Our Underground.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button class="button__filled">BOOK NOW</button>
+        <article>
+            <img alt="People working on reception" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT67ydEFXc0WLr1P_hyTAdeJDU3P0T2ISrmLA&s"/>
+            <div>
+                <img src="Images/StrongTeam.svg"/>
+                <img src="Images/StrongTeamBackground.svg" class="article-bg-img"/>
+                <h3>Strong Team</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            </div>
+        </article>
+
+        <article>
+            <img alt="Luxury room" src="https://fancyhouse-design.com/wp-content/uploads/2023/11/In-this-bedroom-the-luxury-headboard-with-plush-upholstery-commands-attention.-300x300.jpg"/>
+            <div class="dark-theme">
+                <img src="Images/LuxxuryRoom.svg"/>
+                <h3>Luxury Room</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            </div>
+        </article>
+    </section>
+
+    <section class="rooms">
+        <p class="rooms__overtitle">ROOMS</p>
+        <h2>Hand Picked Rooms</h2>
+        <img src="Images/RoomFeaturesBar.svg" class="rooms__features"/>
+        <div class="swiper photo-swiper" id="swiper-rooms">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img class="swiper-slide__rooms-image" alt="room1" src="https://www.shutterstock.com/image-illustration/horizontal-frame-mockup-boho-bedroom-600nw-1901460664.jpg"></div>
+                <div class="swiper-slide"><img class="swiper-slide__rooms-image" alt="room2" src="https://media.remodelista.com/wp-content/uploads/2015/03/fields/tiina-laakonen-hamptons-NY-remodelista-24.jpeg"></div>
+                <div class="swiper-slide"><img class="swiper-slide__rooms-image" alt="room3" src="https://img.freepik.com/premium-photo/living-room-with-luxurious-elegantly-designed-neutral-interior-horizontal-layout_410516-84179.jpg"></div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev" id="swiper-button-prev-rooms"></div>
+            <div class="swiper-button-next" id="swiper-button-next-rooms"></div>
+        </div>
+        <article>
+            <h3>Minimal Duplex Room</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <p class="price__number">$345<span class="price__text">/Night</span></p>
+        </article>
+    </section>
+
+    <section class="intro-video">
+        <p class="intro-video__overtitle">INTRO VIDEO</p>
+        <h2>Meet With Our Luxury Place.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.</p>
+        <video width="335" height="270" controls>
+            <source src="Videos/Video-intro.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        <button class="button__filled">BOOK NOW</button>
+    </section>
+
+    <section class="facilities">
+        <p>FACILITIES</p>
+        <h2>Core Features</h2>
+        <div class="swiper facility-swiper" id="swiper-features">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="swiper-slide__facility">
+                        <h3>01</h3>
+                        <img src="Images/Features/Feature01.svg">
+                        <h4>Have High Rating</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__facility">
+                        <h3>02</h3>
+                        <img src="Images/Features/Feature02.svg">
+                        <h4>Quiet Hours</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__facility">
+                        <h3>03</h3>
+                        <img src="Images/Features/Feature03.svg">
+                        <h4>Best Locations</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__facility">
+                        <h3>04</h3>
+                        <img src="Images/Features/Feature04.svg">
+                        <h4>Free Cancellation</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__facility">
+                        <h3>05</h3>
+                        <img src="Images/Features/Feature05.svg">
+                        <h4>Payment Options</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__facility">
+                        <h3>06</h3>
+                        <img src="Images/Features/Feature06.svg">
+                        <h4>Special Offers</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination" id="swiper-pagination-features"></div>
+        </div>
+    </section>
+
+    <section class="menu">
+        <!-- <img src="Images/FoodsIcon.svg"> -->
+        <p>MENU</p>
+        <h2>Our Foods Menu</h2>
+        <div class="swiper" id="swiper-food">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="menu__swiper-slide">
+                        <div>
+                            <img alt="Eggs & Bacon image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIHtcg_eeKEct6bsV6ajs_HnwzWwgBI0KZUOdbCLTRR3l3Osh5xQhYxo3iYh7n32cPGB-1QyM_8SBYRs5T3d2S2LLMJ1Zq_-9LtAdyUMuOe-d08d4gVR4P-4TCK9PCcEsST-H7k6J7DqO1/s640/Bacon-and-Eggs_IMG_0822.JPG">
+                            <div>
+                                <h4>Eggs & Bacon</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img alt="Tea or Coffee image" src="https://www.eatthis.com/wp-content/uploads/sites/4/2020/07/coffee-tea.jpg?quality=82&strip=1">
+                            <div>
+                                <h4>Tea or Coffee</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img alt="Chia Oatmeal image"  src="https://realfoodrealdeals.com/wp-content/uploads/2022/12/chia-seed-oatmeal-sq22.jpeg">
+                            <div>
+                                <h4>Chia Oatmeal</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="menu__swiper-slide">
+                        <div>
+                            <img alt="Fruit Parfait image" src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2022-01_Yogurt-Parfait%2F2022-01-05_ATK-0852">
+                            <div>
+                                <h4>Fruit Parfait</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img alt="Marmalade Selection image" src="https://sites.create-cdn.net/siteimages/40/6/4/406428/19/8/0/19807515/1000x920.jpeg?1644065739">
+                            <div>
+                                <h4>Marmalade Selection</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img alt="Cheese Plate image"  src="https://www.cupofzest.com/wp-content/uploads/2020/09/Cheese-Board-for-Two-Thumbnail.jpg">
+                            <div>
+                                <h4>Cheese Plate</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu__button-container">
+            <div class="menu__button-container__prev" id="swiper-button-prev-food"></div>
+            <div class="menu__button-container__next" id="swiper-button-next-food"></div>
+        </div>
+    </section>
+    
+    <section class="stats">
+        <div class="swiper stats__swiper" id="swiper-carousel">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img class="swiper-slide__stats-img" alt="room1" src="https://www.shutterstock.com/image-illustration/horizontal-frame-mockup-boho-bedroom-600nw-1901460664.jpg"></div>
+                <div class="swiper-slide"><img class="swiper-slide__stats-img" alt="room2" src="https://media.remodelista.com/wp-content/uploads/2015/03/fields/tiina-laakonen-hamptons-NY-remodelista-24.jpeg"></div>
+                <div class="swiper-slide"><img class="swiper-slide__stats-img" alt="room3" src="https://img.freepik.com/premium-photo/living-room-with-luxurious-elegantly-designed-neutral-interior-horizontal-layout_410516-84179.jpg"></div>
+            </div>
+
+            <div class="swiper-pagination" id="swiper-pagination-carousel"></div>
+        </div>
+
+        <article class="stats__show dark-theme">
+            <div>
+                <img src="Images/RocketIcon.svg" alt="rocket">
+                <h2>84k.</h2>
+                <p>Projects are Completed</p>
+            </div>
+            <div>
+                <img src="Images/PeopleIcon.svg" alt="group of people">
+                <h2>100M.</h2>
+                <p>Active Backers Around World</p>
+            </div>
+            <div>
+                <img src="Images/ChartIcon.svg" alt="chart going up">
+                <h2>02k.</h2>
+                <p>Categories Served</p>
+            </div>
+            <div class="no-margin">
+                <img src="Images/BookIcon.svg" alt="book">
+                <h2>100M.</h2>
+                <p>Idea Raised Funds</p>
+            </div>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <article class="footer__header">
+            <div class="footer__header__logo">
+                <div> <p class="no-margin">H</p> </div>
+                <img src="Images/HotelMiranda.svg" alt="HOTEL MIRANDA"/>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
+            
+            <div class="footer__header__social-nets">
+                <div><img alt="facebook" src="Images/Social/FacebookLogo.svg"></div>
+                <div class="golden-background"><img alt="twitter" src="Images/Social/twitterLogo.svg"></div>
+                <div><img alt="behance" src="Images/Social/BehanceLogo.svg"></div>
+                <div><img alt="linkedin" src="Images/Social/LinkedinLogo.svg"></div>
+                <div><img alt="youtube" src="Images/Social/YoutubeLogo.svg"></div>
+            </div>
+        </article>
+
+        <article class="footer__services no-margin">
+            <h2>Services</h2>
+            <ul>
+                <li>+ Resturent & Bar</li>
+                <li>+ Swimming Pool</li>
+                <li>+ Wellness & Spa</li>
+                <li>+ Restaurant</li>
+                <li>+ Conference Room</li>
+                <li>+ Coctail Party House</li>
+                <li>+ Gaming Zone</li>
+                <li>+ Marriage Party</li>
+                <li>+ Party Planning</li>
+                <li>+ Tour Consultancy</li>
+            </ul>
+        </article>
+        
+        <article class="footer__contact-info">
+            <h2>Contact Us.</h2>
+            <div class="no-margin">
+                <img alt="phone" src="Images/contactPhone.svg">
+                <div>
+                    <h3>Phone Number</h3>
+                    <h4>+987 876 765 76 577</h4>
+                </div>
+            </div>
+            <div>
+                <img alt="email" src="Images/contactEmail.svg">
+                <div>
+                    <h3>Email</h3>
+                    <h4>Example@gmail.com</h4>
+                </div>
+            </div>
+            <div>
+                <img alt="direction" src="Images/contactLocation.svg">
+                <div>
+                    <h3>Direction</h3>
+                    <h4>C/Example nº14</h4>
+                </div>
+            </div>
+        </article>
+
+        <article class="footer__legal no-margin">
+            <p>Copyright By@Example - 2020</p>
+            <p class="no-margin">Terms of use    |    Privacy Environmental Policy</p>
+        </article>
+    </footer>
+</body>
+</html>

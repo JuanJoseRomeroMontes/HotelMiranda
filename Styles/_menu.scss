@@ -1,0 +1,95 @@
+.menu{
+    width: 100%;
+    padding: 20px;
+
+    img{
+        height: 115px;
+        width: 115px;
+        position: absolute;
+        right: -20px;
+        overflow: hidden;
+    }
+
+    p{
+        margin-top: 175px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 15.23px;
+        letter-spacing: 2.8px;
+        color: #777777;
+    }
+
+    h2{
+        margin: 24px 0px 32px 0px;
+        color: #222222;
+    }
+
+    &__button-container{
+        display: flex;
+        justify-content: flex-end;
+
+        div{
+            width: 36px;
+            height: 36px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 10px;
+            margin-left: 16px;
+        }
+
+        &__prev{
+            background-image: url(../Images/SwiperLeftArrow.svg);
+            background-color: #F8F8F8;
+        }
+
+        &__next{
+            background-image: url(../Images/SwiperRightArrow.svg.svg);
+            background-color: #BDAC8D;
+        }
+    }
+
+    &__swiper-slide{
+        div{
+            display: flex;
+            margin-bottom: 20px;
+    
+            img{
+                min-width: 120px;
+                min-height: 120px;
+                max-width: 120px;
+                max-height: 120px;
+                margin: 0;
+                background-color: #777777;
+                color: white;
+                position: static;
+                right: 0px;
+                margin-right: 30px;
+            }
+    
+            div{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin: 0;
+    
+                h4{
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: -0.72px;
+                    margin: 0;
+                }
+            
+                p{
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0px;
+                    color: #222222;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
