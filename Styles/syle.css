@@ -144,12 +144,21 @@ header div p {
   color: white;
 }
 
+.ligth-theme {
+  background-color: white;
+  color: black;
+}
+
 .white-color {
   color: white !important;
 }
 
 .black-color {
   color: black !important;
+}
+
+.red-color {
+  color: #DE5777 !important;
 }
 
 .grey-bg {
@@ -170,6 +179,7 @@ header div p {
   line-height: 43px !important;
   text-align: center;
   color: #BEAD8E;
+  display: inline;
 }
 .price__text {
   font-size: 13px !important;
@@ -177,6 +187,7 @@ header div p {
   line-height: 43px !important;
   text-align: center;
   color: #BEAD8E;
+  display: inline;
 }
 
 .photo-swiper {
@@ -215,6 +226,10 @@ header div p {
 
 .no-margin {
   margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
 }
 
 .availability-section {
@@ -921,6 +936,108 @@ header div p {
 }
 .pagination__arrow {
   font-size: 20px;
+}
+
+.popular-rooms {
+  padding: 48px 20px 48px 20px;
+  margin-top: 60px;
+}
+.popular-rooms p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15.23px;
+  letter-spacing: 2.8px;
+  color: #BDAC8D;
+}
+.popular-rooms h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -0.8px;
+  margin-top: 25px;
+  margin-bottom: 48px;
+}
+
+.offer {
+  margin: 20px;
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1019607843);
+  padding: 20px;
+}
+.offer__header {
+  position: relative;
+  margin: 0px -20px 0px -20px;
+}
+.offer__header img {
+  width: 100%;
+  display: block;
+  min-height: 100px;
+  background-color: #777777;
+}
+.offer__header__old-price {
+  position: absolute;
+  right: 5px;
+  bottom: 40px;
+}
+.offer__header__old-price .price__number {
+  font-size: 23px !important;
+}
+.offer__header__old-price .price__text {
+  font-size: 11px !important;
+}
+.offer__header__new-price {
+  position: absolute;
+  right: 5px;
+  bottom: 0px;
+}
+.offer__overtitle {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.8px;
+  color: #777777;
+  margin: 16px 0 12px 0px;
+}
+.offer h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.44px;
+  margin-bottom: 15px;
+}
+.offer p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777777;
+  margin-bottom: 8px;
+}
+.offer__room-properties {
+  height: 190px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  margin-bottom: 24px;
+}
+.offer__room-properties div {
+  margin-top: 16px;
+}
+.offer__room-properties div img {
+  display: inline;
+}
+.offer__room-properties div p {
+  display: inline;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 17.58px;
+}
+.offer button {
+  width: 216px;
+  height: 60px;
 }
 
 html, * {
