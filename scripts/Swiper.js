@@ -35,3 +35,12 @@ const swiperCarousel = new Swiper('#swiper-carousel', {
     el: '#swiper-pagination-carousel',
   }
 });
+
+const swiperCounterCarousel = new Swiper('#swiper-counter-carousel', {
+  direction: 'horizontal',
+  loop: true,
+
+  pagination: {
+    el: '#swiper-pagination-counter-carousel',
+  }
+});

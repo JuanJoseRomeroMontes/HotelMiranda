@@ -19,7 +19,6 @@
 .button__hollow{
     @include button();
     background-color: transparent;
-    color: black;
     border: 2px solid #FFFFFF54;
 
     &:hover{
@@ -30,6 +29,18 @@
 .dark-theme{
     background-color: black;
     color: white;
+}
+
+.white-color{
+    color: white !important;
+}
+
+.black-color{
+    color: black !important;
+}
+
+.grey-bg{
+    background-color: #292929;
 }
 
 .golden-background{
@@ -90,4 +101,8 @@
 
 .no-margin{
     margin: 0 !important;
+}
+
+.golden-text{
+    color: #BDAC8D;
 }
