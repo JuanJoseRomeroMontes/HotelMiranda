@@ -124,6 +124,10 @@ header button {
   color: white;
 }
 
+.golden-background {
+  background-color: #BDAC8D !important;
+}
+
 .price__number {
   font-size: 32px !important;
   font-weight: 700 !important;
@@ -566,6 +570,121 @@ header button {
   position: relative;
   left: 5%;
   margin: 0 auto 0 auto;
+}
+
+.footer {
+  background-image: url(../Images/footerBackground.svg);
+  margin-top: 60px;
+}
+.footer article {
+  padding: 0 20px;
+  margin-bottom: 32px;
+}
+.footer__header__logo {
+  display: flex;
+  align-items: center;
+  margin: 32px 0 47px 0;
+}
+.footer__header__logo:hover {
+  cursor: pointer;
+}
+.footer__header__logo div {
+  box-shadow: 0 14px 24px rgba(139, 139, 139, 0.2509803922);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 28px;
+  background-color: #BEAD8E;
+}
+.footer__header__logo div p {
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+.footer__header__logo img {
+  height: 56px;
+  width: auto;
+}
+.footer__header p {
+  line-height: 26px;
+  color: #777777;
+  margin-bottom: 32px;
+}
+.footer__header__social-nets {
+  display: flex;
+}
+.footer__header__social-nets div {
+  width: 40px;
+  height: 40px;
+  background-color: #F8F8F8;
+  display: flex;
+  justify-content: center;
+  margin-right: 18px;
+}
+.footer__header__social-nets div img {
+  width: 60%;
+  height: auto;
+}
+.footer__services h2 {
+  margin-bottom: 24px;
+}
+.footer__services ul {
+  display: flex;
+  flex-flow: column wrap;
+  height: 290px;
+  list-style: none;
+}
+.footer__services ul li {
+  margin-bottom: 30px;
+  color: #777777;
+}
+.footer__contact-info h2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.footer__contact-info div {
+  display: flex;
+  margin-top: 60px;
+}
+.footer__contact-info div img {
+  margin-right: 22px;
+}
+.footer__contact-info div div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+.footer__contact-info div div h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 3px;
+}
+.footer__contact-info div div h4 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  text-align: left;
+  color: #777777;
+}
+.footer__legal {
+  background-color: #F8F8F8;
+  z-index: 2;
+  padding: 16px;
+  padding: 20px !important;
+}
+.footer__legal p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.75px;
+  letter-spacing: -0.48px;
+  margin-bottom: 24px;
 }
 
 html, * {
