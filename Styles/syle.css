@@ -160,6 +160,10 @@ header div p {
   background-color: #BDAC8D !important;
 }
 
+.golden-text {
+  color: #BDAC8D !important;
+}
+
 .price__number {
   font-size: 32px !important;
   font-weight: 700 !important;
@@ -211,10 +215,6 @@ header div p {
 
 .no-margin {
   margin: 0 !important;
-}
-
-.golden-text {
-  color: #BDAC8D;
 }
 
 .availability-section {
@@ -863,6 +863,64 @@ header div p {
 .counter__swiper .swiper-wrapper div img {
   width: 100%;
   height: 90%;
+}
+
+.room-list {
+  padding: 20px;
+}
+.room-list article img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+.room-list article h2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.72px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.room-list article p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.room-list article div {
+  position: relative;
+}
+.room-list__pricing {
+  display: flex;
+  justify-content: space-evenly;
+}
+.room-list__pricing h3 {
+  font-family: Archivo;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.41px;
+  color: #BDBDBD;
+}
+.room-list__features {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pagination button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+}
+.pagination__arrow {
+  font-size: 20px;
 }
 
 html, * {

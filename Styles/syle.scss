@@ -12,6 +12,8 @@
 @use '_welcome-page.scss';
 @use '_restaurant.scss';
 @use '_counter.scss';
+@use '_room-list.scss';
+@use '_pagination.scss';
 
 html, * { box-sizing: border-box; margin: 0; padding: 0; font-family: Archivo,"Old Standard TT", Arial, Georgia ; }
 body { min-width: 320px }
