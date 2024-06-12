@@ -44,3 +44,13 @@ const swiperCounterCarousel = new Swiper('#swiper-counter-carousel', {
     el: '#swiper-pagination-counter-carousel',
   }
 });
+
+const swiperOffers = new Swiper('#swiper-offers', {
+  direction: 'horizontal',
+  loop: true,
+
+  navigation: {
+    nextEl: '#swiper-button-next-offers',
+    prevEl: '#swiper-button-prev-offers',
+  }
+});

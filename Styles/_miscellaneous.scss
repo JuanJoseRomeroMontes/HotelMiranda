@@ -31,12 +31,21 @@
     color: white;
 }
 
+.ligth-theme{
+    background-color: white ;
+    color: black;
+}
+
 .white-color{
     color: white !important;
 }
 
 .black-color{
     color: black !important;
+}
+
+.red-color{
+    color: #DE5777 !important;
 }
 
 .grey-bg{
@@ -58,6 +67,7 @@
         line-height: 43px !important;
         text-align: center;
         color: #BEAD8E;
+        display: inline;
     }
 
     &__text{
@@ -66,6 +76,7 @@
         line-height: 43px !important;
         text-align: center;
         color: #BEAD8E;
+        display: inline;
     }
 }
 
@@ -107,3 +118,6 @@
     margin: 0 !important;
 }
 
+.no-padding{
+    padding: 0 !important;
+}
