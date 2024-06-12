@@ -1,6 +1,7 @@
 header{
     padding: 75px 20px 51px 20px;
     background-color: #333333;
+    position: relative;
 
     p{
         color: white;
@@ -23,5 +24,25 @@ header{
         width: 216px;
         height: 60px;
         margin-bottom: 24px;
+    }
+
+    div{
+        padding: 16px 24px;
+        background-color: white;
+        width: fit-content;
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+
+        p{
+            display: inline;
+            color: black;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 17.41px;
+            letter-spacing: -0.48px;
+            text-align: left;
+            margin: 0;
+        }
     }
 }
