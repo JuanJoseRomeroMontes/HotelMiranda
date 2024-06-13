@@ -65,15 +65,15 @@
         margin-bottom: 8px;
     }
 
-    &__room-properties{
-        height: 190px;
+    &__room-amenities{
         display: flex;
-        flex-flow: column wrap;
-        justify-content: space-evenly;
+        flex-flow: wrap;
+        justify-content: space-between;
         margin-bottom: 24px;
 
         div{
             margin-top: 16px;
+            width: 48%;
 
             img{
                 display: inline;
@@ -85,6 +85,7 @@
                 font-size: 15px;
                 font-weight: 500;
                 line-height: 17.58px;
+                margin-left: 5px;
             }
         }
     }

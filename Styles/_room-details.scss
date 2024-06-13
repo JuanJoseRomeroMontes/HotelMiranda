@@ -1,0 +1,165 @@
+.room-details{
+    padding: 20px;
+
+    h2{
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    hr{
+        margin: 12px 0 32px 0;
+        border: 1px solid #F1F1F1;
+    }
+
+    p{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #777777;
+    }
+}
+
+.room-founder{
+    padding: 20px;
+
+    &__profile{
+        position: relative;
+        margin: auto;
+        display: block;
+        width: fit-content;
+
+        &__mask{
+            -webkit-mask-image: url(../Images/Profile-picture.svg);
+            mask-image: url(../Images/Profile-picture.svg);
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            width: 150px;
+            height: 150px;
+        }
+
+        &__check-mark{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+    
+    h2{
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: -0.9px;
+        text-align: center;
+        color: #222222;
+        margin: 38px 0 15px 0;
+    }
+
+    h3{
+        font-family: Archivo;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 15.23px;
+        letter-spacing: 2.8px;
+        text-align: center;
+        color: #BDAC8D;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        color: #777777;
+        margin: 25px 0 20px 0;
+    }
+}
+
+.room-info{
+    padding: 20px;
+
+    h2{
+        font-family: Old Standard TT;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: -1.44px;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+
+    img{
+        width: 100%;
+        background-color: #777777;
+    }
+
+    &__description{
+        margin-top: 24px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #777777;
+    }
+
+    &__availability{
+        padding: 36px 20px;
+
+        p{
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 19.58px;
+            letter-spacing: -0.54px;
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+
+            label{
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 18.75px;
+                margin-bottom: 13px;
+            }
+
+            input[type="date"]{
+                border: none;
+                margin-bottom: 20px;
+                padding: 20px;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18.75px;
+                color:  #777777;
+                background: url(../Images/CalendarIconBlack.svg) #F8F8F8 no-repeat scroll 90% 50%;
+                background-size: 16px;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            input[type="date"]::-webkit-inner-spin-button,
+            input[type="date"]::-webkit-calendar-picker-indicator {
+                visibility: hidden;
+            }
+
+            input[type="submit"]{
+                width: 100%;
+                height: 60px;
+                margin: auto;
+                display: block;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
