@@ -1,0 +1,62 @@
+.contact-info{
+    padding: 32px;
+
+    article{
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 240px;
+
+        h2{
+            font-family: Roboto;
+            font-size: 200px;
+            font-weight: 700;
+            line-height: 234.38px;
+            letter-spacing: -6px;
+            color:  #F8F8F8;
+            position: absolute;
+            right: 0;
+            top: 20px;
+            z-index: -1;
+        }
+
+        div{
+            display: flex;
+            align-items: flex-start;
+
+            img{
+                margin-right: 22px;
+            }
+    
+            div{
+                display: flex;
+                flex-direction: column;
+                margin-top: 0;
+    
+                h3{
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin-bottom:25px;
+                }
+    
+                h4{
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16.41px;
+                    text-align: left;
+                    color: #777777;
+                }
+            }
+        }
+    }
+
+    &__image{
+        width: 335px;
+        height: 200px;
+        margin-left: -12px;
+        background-color: #D4D4D4;
+        margin-top: 30px;
+    }
+}

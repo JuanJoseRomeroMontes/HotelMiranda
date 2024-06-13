@@ -1,15 +1,15 @@
 @mixin button() {
-    color: white;
+    color: white !important;
     font-size: 14px;
     font-weight: 700;
     line-height: 15.23px;
-    letter-spacing: 2.799999952316284px;
-    border: none;
+    letter-spacing: 2.8px;
+    border: none !important;
 }
 
 .button__filled{
     @include button();
-    background-color: #BEAD8E;
+    background-color: #BEAD8E !important;
 
     &:hover{
         cursor: pointer;
