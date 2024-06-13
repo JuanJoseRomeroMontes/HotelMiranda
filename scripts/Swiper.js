@@ -54,3 +54,13 @@ const swiperOffers = new Swiper('#swiper-offers', {
     prevEl: '#swiper-button-prev-offers',
   }
 });
+
+const swiperRelatedRooms = new Swiper('#swiper-related-rooms', {
+  direction: 'horizontal',
+  loop: true,
+
+  navigation: {
+    nextEl: '#swiper-button-next-related-rooms',
+    prevEl: '#swiper-button-prev-related-rooms',
+  }
+});

@@ -1015,25 +1015,26 @@ header div p {
   color: #777777;
   margin-bottom: 8px;
 }
-.offer__room-properties {
-  height: 190px;
+.offer__room-amenities {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-evenly;
+  flex-flow: wrap;
+  justify-content: space-between;
   margin-bottom: 24px;
 }
-.offer__room-properties div {
+.offer__room-amenities div {
   margin-top: 16px;
+  width: 48%;
 }
-.offer__room-properties div img {
+.offer__room-amenities div img {
   display: inline;
 }
-.offer__room-properties div p {
+.offer__room-amenities div p {
   display: inline;
   font-family: Roboto;
   font-size: 15px;
   font-weight: 500;
   line-height: 17.58px;
+  margin-left: 5px;
 }
 .offer button {
   width: 216px;
@@ -1142,6 +1143,152 @@ header div p {
 }
 .contact-form__message-bg {
   background-image: url(../Images/ContactFormulary/message-contact-formulary-icon.svg) !important;
+}
+
+.room-details {
+  padding: 20px;
+}
+.room-details h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.room-details hr {
+  margin: 12px 0 32px 0;
+  border: 1px solid #F1F1F1;
+}
+.room-details p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777777;
+}
+
+.room-founder {
+  padding: 20px;
+}
+.room-founder__profile {
+  position: relative;
+  margin: auto;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.room-founder__profile__mask {
+  -webkit-mask-image: url(../Images/Profile-picture.svg);
+  mask-image: url(../Images/Profile-picture.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+}
+.room-founder__profile__check-mark {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.room-founder h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+  text-align: center;
+  color: #222222;
+  margin: 38px 0 15px 0;
+}
+.room-founder h3 {
+  font-family: Archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.8px;
+  text-align: center;
+  color: #BDAC8D;
+}
+.room-founder p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #777777;
+  margin: 25px 0 20px 0;
+}
+
+.room-info {
+  padding: 20px;
+}
+.room-info h2 {
+  font-family: Old Standard TT;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.44px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.room-info img {
+  width: 100%;
+  background-color: #777777;
+}
+.room-info__description {
+  margin-top: 24px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #777777;
+}
+.room-info__availability {
+  padding: 36px 20px;
+}
+.room-info__availability p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 19.58px;
+  letter-spacing: -0.54px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.room-info__availability form {
+  display: flex;
+  flex-direction: column;
+}
+.room-info__availability form label {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.75px;
+  margin-bottom: 13px;
+}
+.room-info__availability form input[type=date] {
+  border: none;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  color: #777777;
+  background: url(../Images/CalendarIconBlack.svg) #F8F8F8 no-repeat scroll 90% 50%;
+  background-size: 16px;
+}
+.room-info__availability form input[type=date]:hover {
+  cursor: pointer;
+}
+.room-info__availability form input[type=date]::-webkit-inner-spin-button,
+.room-info__availability form input[type=date]::-webkit-calendar-picker-indicator {
+  visibility: hidden;
+}
+.room-info__availability form input[type=submit] {
+  width: 100%;
+  height: 60px;
+  margin: auto;
+  display: block;
+}
+.room-info__availability form input[type=submit]:hover {
+  cursor: pointer;
 }
 
 html, * {
