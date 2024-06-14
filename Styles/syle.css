@@ -5,6 +5,10 @@ nav {
   z-index: 99;
   background-color: white;
 }
+nav a {
+  color: #111111;
+  text-decoration: none;
+}
 nav .nav-bar {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2901960784);
   display: flex;
@@ -125,7 +129,7 @@ header div p {
   font-weight: 700;
   line-height: 15.23px;
   letter-spacing: 2.8px;
-  border: none !important;
+  border: none;
   background-color: #BEAD8E !important;
 }
 .button__filled:hover {
@@ -138,7 +142,7 @@ header div p {
   font-weight: 700;
   line-height: 15.23px;
   letter-spacing: 2.8px;
-  border: none !important;
+  border: none;
   background-color: transparent;
   border: 2px solid rgba(255, 255, 255, 0.3294117647);
 }
@@ -965,6 +969,37 @@ header div p {
   letter-spacing: -0.8px;
   margin-top: 25px;
   margin-bottom: 48px;
+}
+.popular-rooms__swiper {
+  position: relative;
+}
+.popular-rooms__button-left {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  color: transparent;
+  background-image: url(../Images/SwiperLeftArrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  position: absolute;
+  top: 25%;
+  left: -5px;
+  z-index: 3;
+}
+.popular-rooms__button-right {
+  width: 32px;
+  height: 32px;
+  background-color: #BDAC8D;
+  color: transparent;
+  background-image: url(../Images/SwiperRightArrow.svg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  position: absolute;
+  top: 25%;
+  right: -5px;
+  z-index: 3;
 }
 
 .offer {
