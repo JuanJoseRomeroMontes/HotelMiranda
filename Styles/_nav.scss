@@ -5,6 +5,11 @@ nav{
     z-index: 99;
     background-color: white;
 
+    a{
+        color: #111111;
+        text-decoration: none;
+    }
+
     .nav-bar{
         box-shadow: 0 3px 6px #0000004A;
         display: flex;

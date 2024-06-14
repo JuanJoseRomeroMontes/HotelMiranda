@@ -20,4 +20,38 @@
         margin-top: 25px;
         margin-bottom: 48px;
     }
+
+    &__swiper{
+        position: relative;
+    }
+
+    &__button-left{
+        width: 32px;
+        height: 32px;
+        background-color: white;
+        color: transparent;
+        background-image: url(../Images/SwiperLeftArrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10px;
+        position: absolute;
+        top: 25%;
+        left: -5px;
+        z-index: 3;
+    }
+
+    &__button-right{
+        width: 32px;
+        height: 32px;
+        background-color: #BDAC8D;
+        color: transparent;
+        background-image: url(../Images/SwiperRightArrow.svg.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10px;
+        position: absolute;
+        top: 25%;
+        right: -5px;
+        z-index: 3;
+    }
 }
