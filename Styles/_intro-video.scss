@@ -1,0 +1,37 @@
+.intro-video{
+    background-color: black;
+    padding: 20px;
+
+    &__overtitle{
+        margin-top: 64px !important;
+        font-weight: 700 !important;
+        line-height: 15.23px !important;
+        letter-spacing: 2.8px !important;
+        color: #BDAC8D !important;
+    }
+
+    h2{
+        margin-top: 32px;
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: -1.2px;
+        text-align: left;
+        color: white;
+    }
+
+    p{
+        margin-top: 16px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #C2C2C2;
+    }
+
+    button{
+        margin: 36px 0 48px 0;
+        width: 216px;
+        height: 60px;
+    }
+}

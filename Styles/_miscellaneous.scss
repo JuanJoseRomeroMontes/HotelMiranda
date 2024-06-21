@@ -1,0 +1,123 @@
+@mixin button() {
+    color: white !important;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15.23px;
+    letter-spacing: 2.8px;
+    border: none;
+}
+
+.button__filled{
+    @include button();
+    background-color: #BEAD8E !important;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.button__hollow{
+    @include button();
+    background-color: transparent;
+    border: 2px solid #FFFFFF54;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.dark-theme{
+    background-color: black;
+    color: white;
+}
+
+.ligth-theme{
+    background-color: white ;
+    color: black;
+}
+
+.white-color{
+    color: white !important;
+}
+
+.black-color{
+    color: black !important;
+}
+
+.red-color{
+    color: #DE5777 !important;
+}
+
+.grey-bg{
+    background-color: #292929;
+}
+
+.golden-background{
+    background-color: #BDAC8D !important;
+}
+
+.golden-text{
+    color: #BDAC8D !important;
+}
+
+.price{
+    &__number{
+        font-size: 32px !important;
+        font-weight: 700 !important;
+        line-height: 43px !important;
+        text-align: center;
+        color: #BEAD8E;
+        display: inline;
+    }
+
+    &__text{
+        font-size: 13px !important;
+        font-weight: 700 !important;
+        line-height: 43px !important;
+        text-align: center;
+        color: #BEAD8E;
+        display: inline;
+    }
+}
+
+.photo-swiper {
+    width: calc(100% + 40px);
+    position: relative;
+    left: -20px;
+    height: 250px;
+    background-color: #E5E5E5;
+}
+
+.swiper-pagination-bullet-active{
+    background: #BEAD8E !important;
+}
+
+.swiper-button-prev{
+    width: 32px !important;
+    height: 32px !important;
+    background-color: white;
+    color: transparent !important;
+    background-image: url(../Images/SwiperLeftArrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px !important;
+}
+
+.swiper-button-next{
+    width: 32px !important;
+    height: 32px !important;
+    background-color: #BDAC8D;
+    color: transparent !important;
+    background-image: url(../Images/SwiperRightArrow.svg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px !important;
+}
+
+.no-margin{
+    margin: 0 !important;
+}
+
+.no-padding{
+    padding: 0 !important;
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="Styles/syle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><title>Miranda Web</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="/scripts/navHamburguer.js"></script>
+    <script defer src="/scripts/Swiper.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <img class="nav-bar__hamburger" id="navHamburgerButton" src="Images/Hamburguer.svg" alt="Menu"/>
+            <a href="Index.html" class="nav-bar__logo">
+                <div> <p>H</p> </div>
+                <img src="/Images/HotelMiranda.svg" alt="HOTEL MIRANDA"/>
+            </a>
+            <div class="nav-bar__icons">
+                <img src="/Images/ProfileIcon.svg" alt="Profile"/>
+                <img src="/Images/SearchIcon.svg" alt="Search"/>
+            </div>
+        </div>
+        <div class="nav-menu" id="navHamburguerMenu">
+            <ul>
+                <li><a href="/AboutUs.html">About us</a></li>
+                <li><a href="/Rooms.html">Rooms</a></li>
+                <li><a href="/Offers.html">Offers</a></li>
+                <li><a href="/Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+            <p>THE ULTIMATE LUXURY</p>
+            <h1>About Us</h1>
+            <div>
+                <p>Home  &nbsp;&nbsp;| &nbsp;</p>
+                <p class="golden-text">About</p>
+            </div>
+    </header>
+
+    <section class="welcome-page">
+        <video width="335" height="270" controls>
+            <source src="/Videos/Video-intro.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h2>Hello. Our hotel has been present for over 20 years. We make the best for all our customers.</h2>
+        <article>
+            <div>
+                <img alt="breackfast icon" src="/Images/BreackfastIcon.svg">
+                <p>BREAKFAST</p>
+            </div>
+            <div class="golden-background white-color">
+                <img alt="plane icon" src="/Images/PlaneIcon.svg">
+                <p>AIRPORT PICKUP</p>
+            </div>
+            <div>
+                <img alt="map icon" src="/Images/GuideIcon.svg">
+                <p>CITY GUIDE</p>
+            </div>
+            <div>
+                <img alt="room icon" src="/Images/RoomIcon.svg">
+                <p>LUXURY ROOM</p>
+            </div>
+        </article>
+    </section>
+
+    <section class="restaurant">
+        <img alt="restaurant" src="/Images/restaurant.jpg">
+        <p class="restaurant__overtitle">RESTAURANT</p>
+        <h2>Get Restaurant Facilities & Many Other More</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+        <button class="button__filled">TAKE A TOUR</button>
+    </section>
+
+    <section class="facilities dark-theme">
+        <p class="white-color">FACILITIES</p>
+        <h2>Core Features</h2>
+        <div class="swiper facility-swiper" id="swiper-features">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="swiper-slide__facility grey-bg">
+                        <h3 class="black-color">01</h3>
+                        <img src="/Images/Features/Feature01.svg">
+                        <h4 class="white-color">Have High Rating</h4>
+                        <p class="white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__facility grey-bg">
+                        <h3 class="black-color">02</h3>
+                        <img src="/Images/Features/Feature02.svg">
+                        <h4 class="white-color">Quiet Hours</h4>
+                        <p class="white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__facility grey-bg">
+                        <h3 class="black-color">03</h3>
+                        <img src="/Images/Features/Feature03.svg">
+                        <h4 class="white-color">Best Locations</h4>
+                        <p class="white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__facility grey-bg">
+                        <h3 class="black-color">04</h3>
+                        <img src="/Images/Features/Feature04.svg">
+                        <h4 class="white-color">Free Cancellation</h4>
+                        <p class="white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__facility grey-bg">
+                        <h3 class="black-color">05</h3>
+                        <img src="/Images/Features/Feature05.svg">
+                        <h4 class="white-color">Payment Options</h4>
+                        <p class="white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__facility grey-bg">
+                        <h3 class="black-color">06</h3>
+                        <img src="/Images/Features/Feature06.svg">
+                        <h4 class="white-color">Special Offers</h4>
+                        <p class="white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination" id="swiper-pagination-features"></div>
+        </div>
+    </section>
+
+    <section class="counter">
+        <p class="counter__overtitle">COUNTER</p>
+        <h2>Some Fun Facts</h2>
+        <article>
+            <div>
+                <img class="counter__article-image" alt="happy user" src="/Images/HappyUserIcon.svg">
+                <div>
+                    <h3>8000</h3>
+                    <p>Happy Users</p>
+                </div>
+                <img class="counter__article-arrow" alt="arrow" src="/Images/FactsArrow.svg">
+            </div>
+            <div>
+                <img alt="reviews" src="/Images/ReviewsIcon.svg">
+                <div>
+                    <h3>10M</h3>
+                    <p>Reviews & Appriciate</p>
+                </div>
+                <img alt="arrow" src="/Images/FactsArrow.svg">
+            </div>
+            <div>
+                <img alt="wold map" src="/Images/WorldMapIcon.svg">
+                <div>
+                    <h3>100</h3>
+                    <p>Countries Coverage</p>
+                </div>
+                <img alt="arrow" src="/Images/FactsArrow.svg">
+            </div>
+        </article>
+
+        <div class="swiper counter__swiper" id="swiper-counter-carousel">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img alt="room1" src="https://img.freepik.com/free-photo/full-shot-man-carrying-baggage_23-2149963942.jpg?size=626&ext=jpg&ga=GA1.1.2116175301.1717804800&semt=ais_user"></div>
+                <div class="swiper-slide"><img alt="room2" src="https://media.istockphoto.com/id/1448506100/photo/male-hotel-receptionist-assisting-female-guest.jpg?s=612x612&w=0&k=20&c=xXJn95XgzSA4_LgGczr7ce-FnpcWXwYIr-fGH9yN_z0="></div>
+            </div>
+
+            <div class="swiper-pagination" id="swiper-pagination-counter-carousel"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <article class="footer__header">
+            <div class="footer__header__logo">
+                <div> <p class="no-margin">H</p> </div>
+                <img src="/Images/HotelMiranda.svg" alt="HOTEL MIRANDA"/>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
+            
+            <div class="footer__header__social-nets">
+                <div><img alt="facebook" src="/Images/Social/FacebookLogo.svg"></div>
+                <div class="golden-background"><img alt="twitter" src="Images/Social/twitterLogo.svg"></div>
+                <div><img alt="behance" src="/Images/Social/BehanceLogo.svg"></div>
+                <div><img alt="linkedin" src="/Images/Social/LinkedinLogo.svg"></div>
+                <div><img alt="youtube" src="/Images/Social/YoutubeLogo.svg"></div>
+            </div>
+        </article>
+
+        <article class="footer__services no-margin">
+            <h2>Services</h2>
+            <ul>
+                <li>+ Resturent & Bar</li>
+                <li>+ Swimming Pool</li>
+                <li>+ Wellness & Spa</li>
+                <li>+ Restaurant</li>
+                <li>+ Conference Room</li>
+                <li>+ Coctail Party House</li>
+                <li>+ Gaming Zone</li>
+                <li>+ Marriage Party</li>
+                <li>+ Party Planning</li>
+                <li>+ Tour Consultancy</li>
+            </ul>
+        </article>
+        
+        <article class="footer__contact-info">
+            <h2>Contact Us.</h2>
+            <div class="no-margin">
+                <img alt="phone" src="/Images/contactPhone.svg">
+                <div>
+                    <h3>Phone Number</h3>
+                    <h4>+987 876 765 76 577</h4>
+                </div>
+            </div>
+            <div>
+                <img alt="email" src="/Images/contactEmail.svg">
+                <div>
+                    <h3>Email</h3>
+                    <h4>Example@gmail.com</h4>
+                </div>
+            </div>
+            <div>
+                <img alt="direction" src="/Images/contactLocation.svg">
+                <div>
+                    <h3>Direction</h3>
+                    <h4>C/Example nº14</h4>
+                </div>
+            </div>
+        </article>
+
+        <article class="footer__legal no-margin">
+            <p>Copyright By@Example - 2020</p>
+            <p class="no-margin">Terms of use    |    Privacy Environmental Policy</p>
+        </article>
+    </footer>
+</body>
+</html>

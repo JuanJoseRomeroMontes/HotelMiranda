@@ -1,0 +1,52 @@
+.room-list{
+    padding: 20px;
+
+    article{
+        img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 50px;
+        }
+
+        h2{
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.72px;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        p{
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        div{
+            position: relative;
+        }
+    }
+
+    &__pricing{
+        display: flex;
+        justify-content: space-evenly;
+
+        h3{
+            font-family: Archivo;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 17.41px;
+            color: #BDBDBD;
+        }
+    }
+
+    &__features{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
