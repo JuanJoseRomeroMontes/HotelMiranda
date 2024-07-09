@@ -70,6 +70,9 @@
     &__services{
         h2{
             margin-bottom: 24px;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
         }
 
         ul{
@@ -139,6 +142,40 @@
             line-height: 18.75px;
             letter-spacing: -0.48px;
             margin-bottom: 24px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .footer{
+        background-size: cover;
+        background-color: #eaeaea;
+
+        &-divider{
+            width: 100%;
+            padding: 100px 10%;
+            display: flex;
+            justify-content: space-between
+        }
+
+        &__header{
+            width: 30%;
+
+            &__logo{
+                margin: 0 0 47px 0;
+            }
+        }
+
+        &__services{
+            width: 40%;
+        }
+
+        &__contact-info{
+            width: 30%;
+        }
+        &__legal{
+            display: flex;
+            justify-content: space-around;
         }
     }
 }

@@ -697,6 +697,9 @@ header div p {
 }
 .footer__services h2 {
   margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
 }
 .footer__services ul {
   display: flex;
@@ -755,6 +758,34 @@ header div p {
   margin-bottom: 24px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .footer {
+    background-size: cover;
+    background-color: #eaeaea;
+  }
+  .footer-divider {
+    width: 100%;
+    padding: 100px 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__header {
+    width: 30%;
+  }
+  .footer__header__logo {
+    margin: 0 0 47px 0;
+  }
+  .footer__services {
+    width: 40%;
+  }
+  .footer__contact-info {
+    width: 30%;
+  }
+  .footer__legal {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .welcome-page {
   padding: 20px;
   margin-top: 40px;
