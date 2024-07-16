@@ -9,12 +9,18 @@ nav a {
   color: #111111;
   text-decoration: none;
 }
+nav .nav-outside {
+  display: none;
+}
 nav .nav-bar {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2901960784);
   display: flex;
   align-items: center;
   padding: 20px;
   height: 70px;
+}
+nav .nav-bar__navigation {
+  display: none;
 }
 nav .nav-bar__hamburger {
   width: 20px;
@@ -77,6 +83,46 @@ nav .nav-menu ul li a:hover {
   display: block !important;
 }
 
+@media only screen and (min-width: 1000px) {
+  nav {
+    background-color: black;
+  }
+  nav .nav-outside {
+    display: block;
+    position: absolute;
+    color: white;
+    margin-left: 15%;
+    margin-top: 10px;
+  }
+  nav .nav-outside p {
+    font-size: 16px;
+  }
+  nav .nav-bar {
+    width: 70%;
+    background-color: white;
+    position: relative;
+    top: 35px;
+    left: 15%;
+  }
+  nav .nav-bar__hamburger {
+    display: none;
+  }
+  nav .nav-bar__navigation {
+    display: block;
+    margin-left: 32px;
+    width: 35%;
+  }
+  nav .nav-bar__navigation ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  nav .nav-bar__navigation ul li {
+    list-style: none;
+  }
+  nav .nav-menu {
+    display: none;
+  }
+}
 header {
   padding: 75px 20px 51px 20px;
   background-color: #333333;
@@ -93,6 +139,12 @@ header p {
   margin-bottom: 40px;
 }
 header h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 56px;
+  margin-bottom: 40px;
+}
+header .homeTitle {
   color: white;
   font-weight: 400;
   font-size: 56px;
@@ -123,6 +175,18 @@ header div p {
   margin: 0;
 }
 
+@media only screen and (min-width: 1000px) {
+  header {
+    padding-left: 20%;
+  }
+  header .homeTitle {
+    color: white;
+    font-weight: 400;
+    font-size: 6rem;
+    margin-bottom: 40px;
+    max-width: 75%;
+  }
+}
 .button__filled {
   color: white !important;
   font-size: 14px;
@@ -251,6 +315,10 @@ header div p {
   display: flex;
   flex-direction: column;
 }
+.availability-section form div {
+  display: flex;
+  flex-direction: column;
+}
 .availability-section form label {
   font-family: Roboto;
   font-size: 16px;
@@ -284,6 +352,21 @@ header div p {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 1000px) {
+  .availability-section form {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .availability-section form div {
+    display: flex;
+    flex-direction: column;
+    min-width: 25%;
+  }
+  .availability-section form input[type=date] {
+    margin: 0;
+  }
+}
 .about-us {
   padding: 20px;
   margin-top: 60px;
