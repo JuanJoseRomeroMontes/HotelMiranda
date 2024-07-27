@@ -552,8 +552,15 @@ header div p {
 }
 
 .intro-video {
-  background-color: black;
+  background-color: #222222;
   padding: 20px;
+  display: block;
+}
+.intro-video video {
+  margin-top: 36px;
+  width: 80%;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .intro-video__overtitle {
   margin-top: 64px !important;
@@ -584,7 +591,40 @@ header div p {
   width: 216px;
   height: 60px;
 }
+.intro-video__golden-background {
+  display: none;
+}
 
+@media only screen and (min-width: 1000px) {
+  .intro-video {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+    height: 70%;
+    padding: 60px 10%;
+  }
+  .intro-video div {
+    width: 40%;
+  }
+  .intro-video video {
+    margin-top: 64px;
+    width: 55%;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 1;
+  }
+  .intro-video__golden-background {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 30% !important;
+    background-color: #AD9D82;
+    z-index: 0;
+  }
+}
 .facilities {
   margin-top: 12px;
   padding-top: 48px;
@@ -892,12 +932,12 @@ header div p {
   }
   .footer-divider {
     width: 100%;
-    padding: 100px 10%;
+    padding: 100px 5%;
     display: flex;
     justify-content: space-between;
   }
   .footer__header {
-    width: 30%;
+    width: 40%;
   }
   .footer__header__logo {
     margin: 0 0 47px 0;
@@ -911,6 +951,9 @@ header div p {
   .footer__legal {
     display: flex;
     justify-content: space-around;
+  }
+  .footer__legal p {
+    margin: 0;
   }
 }
 .welcome-page {
@@ -1498,8 +1541,13 @@ html, * {
   font-family: Archivo, "Old Standard TT", Arial, Georgia;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   min-width: 320px;
+  height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {

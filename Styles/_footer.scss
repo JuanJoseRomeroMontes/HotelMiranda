@@ -153,13 +153,13 @@
 
         &-divider{
             width: 100%;
-            padding: 100px 10%;
+            padding: 100px 5%;
             display: flex;
             justify-content: space-between
         }
 
         &__header{
-            width: 30%;
+            width: 40%;
 
             &__logo{
                 margin: 0 0 47px 0;
@@ -176,6 +176,10 @@
         &__legal{
             display: flex;
             justify-content: space-around;
+
+            p{
+                margin: 0;
+            }
         }
     }
 }

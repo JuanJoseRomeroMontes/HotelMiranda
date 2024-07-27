@@ -1,6 +1,13 @@
 .intro-video{
-    background-color: black;
+    background-color: #222222;
     padding: 20px;
+    display: block;
+
+    video{
+        margin-top: 36px;
+        width: 80%;
+        height: fit-content;
+    }
 
     &__overtitle{
         margin-top: 64px !important;
@@ -33,5 +40,42 @@
         margin: 36px 0 48px 0;
         width: 216px;
         height: 60px;
+    }
+
+    &__golden-background{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .intro-video{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        position: relative;
+        height: 70%;
+        padding: 60px 10%;
+
+        div{
+            width:40%;
+        }
+
+        video{
+            margin-top: 64px;
+            width: 55%;
+            height: fit-content;
+             z-index: 1;
+        }
+
+        &__golden-background{
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 30% !important;
+            background-color: #AD9D82;
+            z-index: 0;           
+        }
     }
 }
