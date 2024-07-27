@@ -16,6 +16,10 @@
     h2{
         text-align: center;
     }
+
+    &__facilities-list{
+        display: none;
+    }
 }
 
 .facility-swiper {
@@ -57,5 +61,43 @@
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 0px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .facilities{
+        width: 81%;
+        display: block;
+        margin: auto;
+
+        &__facilities-list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        h2{
+            margin-bottom: 24px;
+        }
+    }
+
+    .facility-swiper {
+        display: none !important;
+    }
+
+    .swiper-slide__facility{
+        position: relative;
+        width: 30%;
+
+        h3{
+            font-family: Archivo;
+            font-size: 120px;
+            font-weight: 700;
+            line-height: 130px;
+            color: #2222220A;
+            position: absolute;
+            top: -21px;
+            right: 0;
+        }
     }
 }

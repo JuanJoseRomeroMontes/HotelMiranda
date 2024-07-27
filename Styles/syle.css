@@ -651,6 +651,9 @@ header div p {
 .facilities h2 {
   text-align: center;
 }
+.facilities__facilities-list {
+  display: none;
+}
 
 .facility-swiper {
   width: 100%;
@@ -691,6 +694,37 @@ header div p {
   letter-spacing: 0px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .facilities {
+    width: 81%;
+    display: block;
+    margin: auto;
+  }
+  .facilities__facilities-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .facilities h2 {
+    margin-bottom: 24px;
+  }
+  .facility-swiper {
+    display: none !important;
+  }
+  .swiper-slide__facility {
+    position: relative;
+    width: 30%;
+  }
+  .swiper-slide__facility h3 {
+    font-family: Archivo;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 130px;
+    color: rgba(34, 34, 34, 0.0392156863);
+    position: absolute;
+    top: -21px;
+    right: 0;
+  }
+}
 .food-menu {
   width: 100%;
   padding: 20px;
