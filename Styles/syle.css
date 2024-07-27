@@ -606,6 +606,7 @@ header div p {
   }
   .intro-video div {
     width: 40%;
+    max-width: 480px;
   }
   .intro-video video {
     margin-top: 64px;
@@ -623,6 +624,13 @@ header div p {
     width: 30% !important;
     background-color: #AD9D82;
     z-index: 0;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .intro-video button {
+    margin: 0;
+    position: relative;
+    bottom: 15%;
   }
 }
 .facilities {
