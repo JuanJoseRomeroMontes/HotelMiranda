@@ -72,7 +72,7 @@
         margin: auto;
 
         &__facilities-list{
-            display: flex;
+            display: flex !important;
             flex-wrap: wrap;
         }
 
@@ -87,7 +87,7 @@
 
     .swiper-slide__facility{
         position: relative;
-        width: 30%;
+        width: 28%;
 
         h3{
             font-family: Archivo;

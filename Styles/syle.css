@@ -780,7 +780,7 @@ header div p {
     margin: auto;
   }
   .facilities__facilities-list {
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
   }
   .facilities h2 {
@@ -791,7 +791,7 @@ header div p {
   }
   .swiper-slide__facility {
     position: relative;
-    width: 30%;
+    width: 28%;
   }
   .swiper-slide__facility h3 {
     font-family: Archivo;
@@ -807,16 +807,28 @@ header div p {
 .food-menu {
   width: 100%;
   padding: 20px;
+  position: relative;
 }
-.food-menu img {
+.food-menu__image-container {
+  width: 90px;
+  height: 115px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+.food-menu__image-container img {
   height: 115px;
   width: 115px;
-  position: absolute;
-  right: -20px;
-  overflow: hidden;
+}
+.food-menu__swiper-computer {
+  display: none !important;
+}
+.food-menu__swiper-mobile {
+  display: block !important;
 }
 .food-menu p {
-  margin-top: 175px;
+  margin-top: 135px;
   font-size: 14px;
   font-weight: 700;
   line-height: 15.23px;
@@ -857,7 +869,6 @@ header div p {
   max-width: 120px;
   max-height: 120px;
   margin: 0;
-  background-color: #777777;
   color: white;
   position: static;
   right: 0px;
@@ -886,6 +897,115 @@ header div p {
   margin: 0;
 }
 
+@media only screen and (min-width: 1000px) {
+  .food-menu {
+    padding: 0 50px 0 200px;
+    margin-bottom: 60px;
+  }
+  .food-menu__image-container {
+    width: 165px;
+    height: 165px;
+    overflow: hidden;
+    position: absolute;
+    left: 25px;
+    top: -120px;
+  }
+  .food-menu__image-container img {
+    height: 165px;
+    width: 165px;
+  }
+  .food-menu__swiper-computer {
+    display: block !important;
+  }
+  .food-menu__swiper-mobile {
+    display: none !important;
+  }
+  .food-menu__button-container {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .food-menu__button-container div {
+    width: 62px;
+    height: 62px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px;
+    margin-left: 30px;
+  }
+  .food-menu__button-container__prev {
+    background-image: url(../Images/SwiperLeftArrow.svg);
+    background-color: #F8F8F8;
+  }
+  .food-menu__button-container__next {
+    background-image: url(../Images/SwiperRightArrow.svg.svg);
+    background-color: #BDAC8D;
+  }
+  .food-menu__swiper-slide {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .food-menu__swiper-slide div {
+    display: flex;
+    margin-bottom: 20px;
+    width: 45%;
+    margin-right: 5%;
+  }
+  .food-menu__swiper-slide div img {
+    min-width: 120px;
+    min-height: 120px;
+    max-width: 120px;
+    max-height: 120px;
+    margin: 0;
+    color: white;
+    position: static;
+    right: 0px;
+    margin-right: 30px;
+  }
+  .food-menu__swiper-slide div div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+  }
+  .food-menu__swiper-slide div div h4 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+    margin: 0;
+  }
+  .food-menu__swiper-slide div div p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #222222;
+    margin: 0;
+  }
+  .food-menu__swiper-slide div .food-menu__left-arrow {
+    display: none;
+    width: 32px !important;
+    height: auto;
+    min-width: 0;
+    min-height: 0;
+    justify-content: end;
+    margin: 0 5% 0 auto;
+  }
+  .food-menu__swiper-slide div:hover {
+    background-color: #222222;
+    color: white;
+  }
+  .food-menu__swiper-slide div:hover p {
+    color: white;
+  }
+  .food-menu__swiper-slide div:hover .food-menu__left-arrow {
+    display: block;
+  }
+}
 .stats {
   margin: 20px 0 0 0;
 }
