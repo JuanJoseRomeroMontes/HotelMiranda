@@ -1720,17 +1720,34 @@ header div p {
   color: #777777;
 }
 .contact-info__image {
-  width: 335px;
-  height: 200px;
-  margin-left: -12px;
-  background-color: #D4D4D4;
+  padding-top: 60%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   margin-top: 30px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .contact-info__article-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+  .contact-info__article-container article {
+    width: 30%;
+  }
+  .contact-info__image {
+    padding-top: 50%;
+    width: 80%;
+    margin: 30px auto 0 auto;
+  }
+}
 .contact-form form {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 32px;
 }
 .contact-form form input, .contact-form form textarea {
   border: none;
@@ -1760,22 +1777,43 @@ header div p {
   margin: 20px auto 0px auto;
   display: block;
 }
-.contact-form__name-bg {
+.contact-form__name {
   background-image: url(../Images/ContactFormulary/name-contact-formulary-icon.svg) !important;
 }
-.contact-form__phone-bg {
+.contact-form__phone {
   background-image: url(../Images/ContactFormulary/phone-contact-formulary-icon.svg) !important;
 }
-.contact-form__email-bg {
+.contact-form__email {
   background-image: url(../Images/ContactFormulary/email-contact-formulary-icon.svg) !important;
 }
-.contact-form__subject-bg {
+.contact-form__subject {
   background-image: url(../Images/ContactFormulary/subject-contact-formulary-icon.svg) !important;
 }
-.contact-form__message-bg {
+.contact-form__message {
   background-image: url(../Images/ContactFormulary/message-contact-formulary-icon.svg) !important;
 }
 
+@media only screen and (min-width: 1000px) {
+  .contact-form {
+    width: 70%;
+    margin: auto;
+  }
+  .contact-form form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .contact-form form input[type=submit] {
+    max-width: 40%;
+  }
+  .contact-form__message {
+    background-image: url(../Images/ContactFormulary/message-contact-formulary-icon.svg) !important;
+    width: 100%;
+  }
+  .contact-form__name, .contact-form__phone, .contact-form__email, .contact-form__subject {
+    width: 49%;
+  }
+}
 .room-details {
   padding: 20px;
 }
