@@ -6,7 +6,7 @@
 @use '_rooms.scss';
 @use '_intro-video.scss';
 @use '_facilities.scss';
-@use '_menu.scss';
+@use '_food-menu.scss';
 @use '_stats.scss';
 @use '_footer.scss';
 @use '_welcome-page.scss';
@@ -20,8 +20,9 @@
 @use '_contact-form.scss';
 @use '_room-details.scss';
 
-html, * { box-sizing: border-box; margin: 0; padding: 0; font-family: Archivo,"Old Standard TT", Arial, Georgia ; }
-body { min-width: 320px }
+html, * { box-sizing: border-box; margin: 0; padding: 0; font-family: Archivo,"Old Standard TT", Arial, Georgia; }
+html{height: 100%;}
+body { min-width: 320px; height: 100%; }
 
 h1,h2,h3,h4,h5,h6 { font-family: "Old Standard TT";}
 
@@ -30,4 +31,9 @@ h2{
     font-weight: 400;
     line-height: 60px;
     letter-spacing: -1.2px;
+}
+
+.imgDiv{
+    background-size: cover;
+    display: block;
 }

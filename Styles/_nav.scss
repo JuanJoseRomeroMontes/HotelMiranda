@@ -10,12 +10,20 @@ nav{
         text-decoration: none;
     }
 
+    .nav-outside{
+        display: none;
+    }
+
     .nav-bar{
         box-shadow: 0 3px 6px #0000004A;
         display: flex;
         align-items: center;
         padding: 20px;
         height: 70px;
+
+        &__navigation{
+            display: none;
+        }
 
         &__hamburger{
             width: 20px;
@@ -89,4 +97,53 @@ nav{
 
 .display-true{
     display: block !important;
+}
+
+@media only screen and (min-width: 1000px) {
+    nav{
+        background-color: black;
+
+        .nav-outside{
+            display: block;
+            position: absolute;
+            color: white;
+            margin-left: 15%;
+            margin-top: 10px;
+            
+            p{
+                font-size: 16px;
+            }
+        }
+
+        .nav-bar{
+            width: 70%;
+            background-color: white;
+            position: relative;
+            top: 35px;
+            left: 15%;
+
+            &__hamburger{
+                display: none;
+            }
+        
+            &__navigation{
+                display: block;
+                margin-left: 32px;
+                width: 35%;
+                
+                ul{
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    li{
+                        list-style: none;
+                    }
+                }
+            }
+        }
+
+        .nav-menu{
+            display: none;
+        }
+    }
 }

@@ -53,10 +53,32 @@
     }
 
     &__image{
-        width: 335px;
-        height: 200px;
-        margin-left: -12px;
-        background-color: #D4D4D4;
+        padding-top: 60%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .contact-info{
+        &__article-container{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: auto;
+
+            article{
+                width: 30%;
+            }
+        }
+
+        &__image{
+            padding-top: 50%;
+            width: 80%;
+            margin: 30px auto 0 auto;
+        }
     }
 }

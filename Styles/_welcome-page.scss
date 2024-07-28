@@ -45,3 +45,23 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .welcome-page{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    
+        h2{
+            font-size: 72px;
+            font-weight: 400;
+            line-height: 88.99px;
+            letter-spacing: -2.16px;
+            text-align: center;
+        }
+
+        article{
+            justify-content: space-between;
+        }
+    }
+}
