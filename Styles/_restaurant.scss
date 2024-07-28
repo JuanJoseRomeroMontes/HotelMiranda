@@ -3,40 +3,101 @@
     padding: 20px;
     box-shadow: 0px 14px 24px 0px #B8B8B81A;
 
-    img{
-        width: 300px;
-        height: 240px;
+    &__image{
+        padding-top: 80%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         margin-bottom: 32px;
     }
 
-    .restaurant__overtitle{
-        font-weight: 700;
-        line-height: 15.23px;
-        letter-spacing: 2.8px;
-        margin-bottom: 26px;
-    }
+    &__info{
+        &__overtitle{
+            font-weight: 700;
+            line-height: 15.23px;
+            letter-spacing: 2.8px;
+            margin-bottom: 26px;
+        }
 
-    h2{
-        font-size: 40px;
-        font-weight: 400;
-        line-height: 49.44px;
-        letter-spacing: -1.0499999523162842px;
-        text-align: left;
-        color: #222222;
-        margin-bottom: 26px;
+        h2{
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 49.44px;
+            letter-spacing: -1.0499999523162842px;
+            text-align: left;
+            color: #222222;
+            margin-bottom: 26px;
+        }
+    
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: #777777;
+            margin-bottom: 16px;
+        }
+    
+        button{
+            width: 216px;
+            height: 60px;
+        }
     }
+}
 
-    p{
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        text-align: left;
-        color: #777777;
-        margin-bottom: 16px;
+@media only screen and (min-width: 1000px) {
+    .restaurant{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 10px auto 50px auto;
+
+        img{
+            padding-top: 30%;
+            width: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        &__image{
+            padding-top: 45%;
+            width: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 32px;
+        }
+
+        &__info{
+            width: 33%;
+
+            h2{
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 59.33px;
+                letter-spacing: -1.44px;
+                text-align: left;
+            }
+        }
     }
+}
 
-    button{
-        width: 216px;
-        height: 60px;
+@media only screen and (min-width: 1360px) {
+    .restaurant{
+
+        &__image{
+            padding-top: 40%;
+            width: 55%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 32px;
+        }
+
+        &__info{
+            width: 40%;
+        }
     }
 }

@@ -229,7 +229,7 @@ header div p {
 }
 
 .black-color {
-  color: black !important;
+  color: #222222 !important;
 }
 
 .red-color {
@@ -782,6 +782,7 @@ header div p {
   .facilities__facilities-list {
     display: flex !important;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   .facilities h2 {
     margin-bottom: 24px;
@@ -801,7 +802,7 @@ header div p {
     color: rgba(34, 34, 34, 0.0392156863);
     position: absolute;
     top: -21px;
-    right: 0;
+    right: -7px;
   }
 }
 .food-menu {
@@ -1272,23 +1273,43 @@ header div p {
   text-align: center;
 }
 
+@media only screen and (min-width: 1000px) {
+  .welcome-page {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .welcome-page h2 {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 88.99px;
+    letter-spacing: -2.16px;
+    text-align: center;
+  }
+  .welcome-page article {
+    justify-content: space-between;
+  }
+}
 .restaurant {
   margin: 10px 20px 50px 20px;
   padding: 20px;
   box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1019607843);
 }
-.restaurant img {
-  width: 300px;
-  height: 240px;
+.restaurant__image {
+  padding-top: 80%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   margin-bottom: 32px;
 }
-.restaurant .restaurant__overtitle {
+.restaurant__info__overtitle {
   font-weight: 700;
   line-height: 15.23px;
   letter-spacing: 2.8px;
   margin-bottom: 26px;
 }
-.restaurant h2 {
+.restaurant__info h2 {
   font-size: 40px;
   font-weight: 400;
   line-height: 49.44px;
@@ -1297,7 +1318,7 @@ header div p {
   color: #222222;
   margin-bottom: 26px;
 }
-.restaurant p {
+.restaurant__info p {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -1305,11 +1326,57 @@ header div p {
   color: #777777;
   margin-bottom: 16px;
 }
-.restaurant button {
+.restaurant__info button {
   width: 216px;
   height: 60px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .restaurant {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px auto 50px auto;
+  }
+  .restaurant img {
+    padding-top: 30%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .restaurant__image {
+    padding-top: 45%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 32px;
+  }
+  .restaurant__info {
+    width: 33%;
+  }
+  .restaurant__info h2 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 59.33px;
+    letter-spacing: -1.44px;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1360px) {
+  .restaurant__image {
+    padding-top: 40%;
+    width: 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 32px;
+  }
+  .restaurant__info {
+    width: 40%;
+  }
+}
 .counter {
   margin-top: 40px;
   padding: 20px 20px 0 20px;
@@ -1348,6 +1415,7 @@ header div p {
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
+  white-space: nowrap;
 }
 .counter__article-image {
   height: 65px;
@@ -1358,14 +1426,60 @@ header div p {
   width: auto;
 }
 .counter__swiper {
-  height: 250px;
   margin-top: 60px;
+}
+.counter__swiper .swiper-wrapper .counter__swiper__image {
+  padding-top: 60%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
 }
 .counter__swiper .swiper-wrapper div img {
   width: 100%;
   height: 90%;
 }
+.counter__images {
+  display: none;
+}
 
+@media only screen and (min-width: 1000px) {
+  .counter {
+    width: 80%;
+    margin: auto;
+  }
+  .counter article {
+    display: flex;
+    justify-content: space-around;
+  }
+  .counter article div {
+    justify-content: flex-start;
+    width: 30%;
+    margin: 0;
+  }
+  .counter article div img {
+    margin: 0 10% 0 0;
+  }
+  .counter article div .counter__article-arrow {
+    margin: 0 0 0 auto;
+  }
+  .counter__swiper {
+    display: none !important;
+  }
+  .counter__images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  .counter__images__image {
+    padding-top: 30%;
+    width: 48%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
 .room-list {
   padding: 20px;
 }
