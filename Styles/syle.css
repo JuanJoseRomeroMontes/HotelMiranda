@@ -1482,11 +1482,26 @@ header div p {
 }
 .room-list {
   padding: 20px;
+  padding-top: 60px;
+  display: block;
+}
+.room-list__computer {
+  display: none;
+}
+.room-list article {
+  margin-bottom: 30px;
+}
+.room-list article .div-img {
+  margin-bottom: 50px;
+  padding-top: 75%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .room-list article img {
   width: 100%;
   height: auto;
-  margin-bottom: 50px;
 }
 .room-list article h2 {
   font-size: 24px;
@@ -1520,10 +1535,36 @@ header div p {
 }
 .room-list__features {
   position: absolute;
-  bottom: 0;
+  bottom: -20%;
   left: 0;
 }
 
+@media only screen and (min-width: 700px) {
+  .room-list article h2 {
+    margin-top: 10%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .room-list {
+    display: none;
+  }
+  .room-list__computer {
+    display: block;
+  }
+  .room-list__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 35px auto;
+  }
+  .room-list article {
+    width: 30%;
+  }
+  .room-list article h2 {
+    margin-top: 0;
+  }
+}
 .pagination {
   display: flex;
   justify-content: space-evenly;
@@ -1538,6 +1579,12 @@ header div p {
   font-size: 20px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .pagination {
+    width: 35%;
+    margin: auto;
+  }
+}
 .popular-rooms {
   padding: 48px 20px 48px 20px;
   margin-top: 60px;

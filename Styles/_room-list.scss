@@ -1,11 +1,27 @@
 .room-list{
     padding: 20px;
+    padding-top: 60px;
+    display: block;
+
+    &__computer{
+        display: none;
+    }
 
     article{
+        margin-bottom: 30px;
+
+        .div-img{
+            margin-bottom: 50px;
+            padding-top: 75%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
         img{
             width: 100%;
             height: auto;
-            margin-bottom: 50px;
         }
 
         h2{
@@ -46,7 +62,43 @@
 
     &__features{
         position: absolute;
-        bottom: 0;
+        bottom: -20%;
         left: 0;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .room-list{
+        article{
+            h2{
+                margin-top: 10%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .room-list{
+        display: none;
+    
+        &__computer{
+            display: block;
+        }
+
+        &__wrapper{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            width: 80%;
+            margin: 35px auto;
+        }
+
+        article{
+            width: 30%;
+
+            h2{
+                margin-top: 0;
+            }
+        }
     }
 }
