@@ -4,6 +4,7 @@ nav {
   width: 100%;
   z-index: 99;
   background-color: white;
+  transition: transform 0.5s;
 }
 nav a {
   color: #111111;
@@ -127,7 +128,7 @@ header {
   padding: 75px 20px 51px 20px;
   background-color: #333333;
   position: relative;
-  margin-top: 70px;
+  padding-top: 90px;
 }
 header p {
   color: white;
@@ -177,6 +178,7 @@ header div p {
 
 @media only screen and (min-width: 1000px) {
   header {
+    padding-top: 140px;
     padding-left: 20%;
   }
   header .homeTitle {

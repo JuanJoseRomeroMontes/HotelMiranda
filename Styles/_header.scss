@@ -2,7 +2,7 @@ header{
     padding: 75px 20px 51px 20px;
     background-color: #333333;
     position: relative;
-    margin-top: 70px;
+    padding-top: 90px;
 
     p{
         color: white;
@@ -57,6 +57,7 @@ header{
 
 @media only screen and (min-width: 1000px) {
     header{
+        padding-top: 140px;
         padding-left: 20%;
 
         .homeTitle{
