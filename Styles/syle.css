@@ -554,6 +554,12 @@ header div p {
   height: 250px;
   background-color: #E5E5E5;
 }
+.rooms__swiper__mobile {
+  display: block !important;
+}
+.rooms__swiper__computer {
+  display: none !important;
+}
 
 .swiper-slide__rooms-image {
   width: 100%;
@@ -569,6 +575,12 @@ header div p {
     left: -20px;
     height: 500px;
     background-color: transparent;
+  }
+  .rooms__swiper__mobile {
+    display: none !important;
+  }
+  .rooms__swiper__computer {
+    display: block !important;
   }
   .rooms article {
     width: 40%;
@@ -623,13 +635,13 @@ header div p {
     z-index: 10;
   }
   .swiper-slide__rooms-image {
-    width: 50% !important;
+    width: 30% !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 1.75%;
+    margin-right: 1.75%;
   }
 }
 .intro-video {

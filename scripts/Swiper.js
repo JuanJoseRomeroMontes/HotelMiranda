@@ -1,6 +1,19 @@
-const swiperRooms = new Swiper('#swiper-rooms', {
+const swiperRoomsMobile = new Swiper('#swiper-rooms-mobile', {
+  direction: 'horizontal',
+  loop: true,
+
+  navigation: {
+    nextEl: '#swiper-button-next-rooms',
+    prevEl: '#swiper-button-prev-rooms',
+  }
+});
+
+const swiperRooms = new Swiper('#swiper-rooms-computer', {
     direction: 'horizontal',
     loop: true,
+    slidesPerView: 3,
+    centeredSlides: true,
+    spaceBetween: 30,
   
     navigation: {
       nextEl: '#swiper-button-next-rooms',
