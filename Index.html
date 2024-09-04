@@ -12,6 +12,7 @@
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="/scripts/navBar.js"></script>
     <script defer src="/scripts/navHamburguer.js"></script>
     <script defer src="/scripts/Swiper.js"></script>
 </head>
@@ -104,10 +105,29 @@
         <p class="rooms__overtitle">ROOMS</p>
         <h2>Hand Picked Rooms</h2>
         <img src="/Images/RoomFeaturesBar.svg" class="rooms__features"/>
-        <div class="swiper rooms__swiper" id="swiper-rooms">
+        <div class="swiper rooms__swiper rooms__swiper__mobile" id="swiper-rooms-mobile">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
+                <div class="swiper-slide__rooms-image swiper-slide" alt="room1" style="background-image: url(https://www.shutterstock.com/image-illustration/horizontal-frame-mockup-boho-bedroom-600nw-1901460664.jpg);"></div>
+                <div class="swiper-slide__rooms-image swiper-slide" alt="room2" style="background-image: url(https://media.remodelista.com/wp-content/uploads/2015/03/fields/tiina-laakonen-hamptons-NY-remodelista-24.jpeg);"></div>
+                <div class="swiper-slide__rooms-image swiper-slide" alt="room3" style="background-image: url(https://img.freepik.com/premium-photo/living-room-with-luxurious-elegantly-designed-neutral-interior-horizontal-layout_410516-84179.jpg);"></div>
+                <div class="swiper-slide__rooms-image swiper-slide" alt="room1" style="background-image: url(https://www.shutterstock.com/image-illustration/horizontal-frame-mockup-boho-bedroom-600nw-1901460664.jpg);"></div>
+                <div class="swiper-slide__rooms-image swiper-slide" alt="room2" style="background-image: url(https://media.remodelista.com/wp-content/uploads/2015/03/fields/tiina-laakonen-hamptons-NY-remodelista-24.jpeg);"></div>
+                <div class="swiper-slide__rooms-image swiper-slide" alt="room3" style="background-image: url(https://img.freepik.com/premium-photo/living-room-with-luxurious-elegantly-designed-neutral-interior-horizontal-layout_410516-84179.jpg);"></div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="rooms__button-left" id="swiper-button-prev-rooms"></div>
+            <div class="rooms__button-right" id="swiper-button-next-rooms"></div>
+        </div>
+        <div class="swiper rooms__swiper rooms__swiper__computer" id="swiper-rooms-computer">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide__rooms-image swiper-slide" alt="room1" style="background-image: url(https://www.shutterstock.com/image-illustration/horizontal-frame-mockup-boho-bedroom-600nw-1901460664.jpg);"></div>
+                <div class="swiper-slide__rooms-image swiper-slide" alt="room2" style="background-image: url(https://media.remodelista.com/wp-content/uploads/2015/03/fields/tiina-laakonen-hamptons-NY-remodelista-24.jpeg);"></div>
+                <div class="swiper-slide__rooms-image swiper-slide" alt="room3" style="background-image: url(https://img.freepik.com/premium-photo/living-room-with-luxurious-elegantly-designed-neutral-interior-horizontal-layout_410516-84179.jpg);"></div>
                 <div class="swiper-slide__rooms-image swiper-slide" alt="room1" style="background-image: url(https://www.shutterstock.com/image-illustration/horizontal-frame-mockup-boho-bedroom-600nw-1901460664.jpg);"></div>
                 <div class="swiper-slide__rooms-image swiper-slide" alt="room2" style="background-image: url(https://media.remodelista.com/wp-content/uploads/2015/03/fields/tiina-laakonen-hamptons-NY-remodelista-24.jpeg);"></div>
                 <div class="swiper-slide__rooms-image swiper-slide" alt="room3" style="background-image: url(https://img.freepik.com/premium-photo/living-room-with-luxurious-elegantly-designed-neutral-interior-horizontal-layout_410516-84179.jpg);"></div>
