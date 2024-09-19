@@ -20,6 +20,14 @@
         text-align: left;
         color: #777777;
     }
+
+    &__mobile{
+        display: block !important;
+    }
+
+    &__computer{
+        display: none !important;
+    }
 }
 
 .room-founder{
@@ -128,7 +136,7 @@
                 margin-bottom: 13px;
             }
 
-            input[type="date"]{
+            textarea{
                 border: none;
                 margin-bottom: 20px;
                 padding: 20px;
@@ -137,6 +145,22 @@
                 font-weight: 400;
                 line-height: 18.75px;
                 color:  #777777;
+                background-color: #F8F8F8;
+            }
+
+            input{
+                border: none;
+                margin-bottom: 20px;
+                padding: 20px;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18.75px;
+                color:  #777777;
+                background-color: #F8F8F8;
+            }
+
+            input[type="date"]{
                 background: url(../Images/CalendarIconBlack.svg) #F8F8F8 no-repeat scroll 90% 50%;
                 background-size: 16px;
 
@@ -159,6 +183,104 @@
                 &:hover{
                     cursor: pointer;
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .room-info{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        &__display{
+            width: 65%;
+        }
+
+        &__description{
+            width: 65%;
+        }
+
+        &__availability{
+            margin-top: 3em;
+            width: 30%;
+        }
+    }
+
+    .room-details{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+
+        &__mobile{
+            display: none !important;
+        }
+
+        &__computer{
+            display: flex !important;
+        }
+    }
+
+    .recomended-room{
+
+        width: 28%;
+        margin: 0 2% 0 2%;
+
+
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            position: relative;
+            top: 43px;
+            z-index: 2;
+            width: 95%;
+        }
+
+        &__image{
+            padding-top: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        &__pricing{
+            margin-left: auto;
+            margin-right: auto;
+            width: max-content;
+            margin-top: 5px;
+        }
+
+        article{
+            background-color: white;
+            position: relative;
+            top: -25px;
+            z-index: 1;
+    
+            h3{
+                padding-top: 20px;
+                font-size: 28px;
+                font-weight: 400;
+                line-height: 36px;
+                letter-spacing: -1.2px;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+        
+            h4{
+                margin: 20px auto 0px auto;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: center;
+                max-width: 287px;
             }
         }
     }
